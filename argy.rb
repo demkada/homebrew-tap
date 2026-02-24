@@ -11,7 +11,7 @@ class Argy < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/demkada/argy-code/releases/download/v1.0.0/argy-darwin-x64.zip"
-      sha256 "ce62efe1cdf8ad54b70ed1e247a022ad6cd43f73b9821e1a7904539c4efb63dc"
+      sha256 "39bf7058967106f68ccac3bdc0556a650976df65332221a100e44af59fb2d3d4"
 
       def install
         bin.install "argy"
@@ -19,7 +19,7 @@ class Argy < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/demkada/argy-code/releases/download/v1.0.0/argy-darwin-arm64.zip"
-      sha256 "5cee726fa894b684adf8e6c277b8fcaf89a4134ee6e9541a10ca96c4afa3c571"
+      sha256 "cf88c8dab18161bc047a95b9d9c50af156983ca45a8f746686c5963729994f6c"
 
       def install
         bin.install "argy"
@@ -30,14 +30,14 @@ class Argy < Formula
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
       url "https://github.com/demkada/argy-code/releases/download/v1.0.0/argy-linux-x64.tar.gz"
-      sha256 "96076bbb28cef1f4b386780738266ba5221e8aa80f9047fe1852c60656caa4bf"
+      sha256 "1024a8dce71d250ef578c94c00ff33b1b9c6772095cfd1d076e4bcfbed712b96"
       def install
         bin.install "argy"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
       url "https://github.com/demkada/argy-code/releases/download/v1.0.0/argy-linux-arm64.tar.gz"
-      sha256 "a742ee74d097595b5ea12b1c6092acf68054648e06a8b08639078911aec7232d"
+      sha256 "aa27653e3a1cd2c378ea22ca80621c1cb59901860bef72670d6c47449a4c69a8"
       def install
         bin.install "argy"
       end
