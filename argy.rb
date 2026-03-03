@@ -4,22 +4,22 @@
 class Argy < Formula
   desc "The AI coding agent built for the terminal."
   homepage "https://github.com/demkada/argy-code"
-  version "1.0.11"
+  version "1.0.12"
 
   depends_on "ripgrep"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/demkada/argy-code/releases/download/v1.0.11/argy-darwin-x64.zip"
-      sha256 "3d7a606e9c8413d79a010ca35ffca5fd2406d6686995853157f73b7b482b0098"
+      url "https://github.com/demkada/argy-code/releases/download/v1.0.12/argy-darwin-x64.zip"
+      sha256 "8a29b949b4440218fdc632ebffd1bf131821db40115e0f3fcc703eff65ab984c"
 
       def install
         bin.install "argy"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/demkada/argy-code/releases/download/v1.0.11/argy-darwin-arm64.zip"
-      sha256 "726e99d25fb262d4fe3c2736553bb347a3ea8d69ddee3d7eea096ee0ba167d0f"
+      url "https://github.com/demkada/argy-code/releases/download/v1.0.12/argy-darwin-arm64.zip"
+      sha256 "2bbbea745bc0efde3cc485e03b472c4ecc93b684de301e531b694a5be090041a"
 
       def install
         bin.install "argy"
@@ -29,15 +29,15 @@ class Argy < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/demkada/argy-code/releases/download/v1.0.11/argy-linux-x64.tar.gz"
-      sha256 "4b2a98e9e089ffed2d37ff262e8b33c1b6c70f2c9c7fcf9698f689135bb8b181"
+      url "https://github.com/demkada/argy-code/releases/download/v1.0.12/argy-linux-x64.tar.gz"
+      sha256 "a9a8078bcfbf2e15f74a24f6bb7436ffc621a24ffbac9ba5e35d21a90cab99c4"
       def install
         bin.install "argy"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/demkada/argy-code/releases/download/v1.0.11/argy-linux-arm64.tar.gz"
-      sha256 "709b0078a9848280137aef9b980919e354aa737ce6c028316a94595203667d87"
+      url "https://github.com/demkada/argy-code/releases/download/v1.0.12/argy-linux-arm64.tar.gz"
+      sha256 "079c59f5c4e5bbd6e89bd5ca7f63136ed46cbcc32a0cb9c2810a55066699568d"
       def install
         bin.install "argy"
       end
